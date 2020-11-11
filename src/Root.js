@@ -2,7 +2,7 @@ import React from "react";
 import Clock from "./Clock";
 
 const Root = () => (
-  <div>
+  <div id="widgets">
     <Clock />
   </div>
 );
