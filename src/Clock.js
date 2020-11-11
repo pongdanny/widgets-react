@@ -20,21 +20,24 @@ class Clock extends React.Component {
   };
 
   render() {
-    const time = new Date()
+    const time = new Date();
     return (
-        <div id="clock">
-          <h1>Clock</h1>
+      <div id="clock">
+        <h1>Clock</h1>
         <div>
-          <p>
+          <p className="timedate">
             <span>Time:</span>
-              <span>{time.getHours()}:</span>
-              <span>{time.getMinutes()}:</span>
-              <span>{time.getSeconds()}</span>
-
-            </p>
-            </div>
+            <span id="digits"></span>
+            <span>{time.getHours()}:</span>
+            <span>{time.getMinutes()}:</span>
+            <span>{time.getSeconds()}</span>
+          </p>
+          <p className="timedate">
+            <span>Date:</span>
+            <span>{time.toDateString()}</span>
+          </p>
         </div>
-
+      </div>
     );
   }
 }
