@@ -25,18 +25,18 @@ class Clock extends React.Component {
       <div>
         <h1>Clock</h1>
         <div id="clock">
-            <p id="time">
-              <span>Time:</span>
-              <span>
-                <span>{time.getHours()}:</span>
-                <span>{time.getMinutes()}:</span>
-                <span>{time.getSeconds()}</span>
-              </span>
-            </p>
-            <p id="date">
-              <span>Date:</span>
-              <span>{time.toDateString()}</span>
-            </p>
+          <p id="time">
+            <span>Time:</span>
+            <span>
+              <span>{time.getHours()}:</span>
+              <span>{time.getMinutes()}:</span>
+              <span>{time.getSeconds()}</span>
+            </span>
+          </p>
+          <p id="date">
+            <span>Date:</span>
+            <span>{time.toDateString()}</span>
+          </p>
         </div>
       </div>
     );
